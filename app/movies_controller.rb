@@ -35,6 +35,7 @@ binding.pry
     m.director = args[:director],
     m.lead = args[:lead],
     m.in_theaters = args[:in_theaters]
+    m.save
   end
   binding.pry
 end
