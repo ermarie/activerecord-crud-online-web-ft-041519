@@ -29,9 +29,15 @@ def can_be_created_in_a_block(args = __)
   # release_date == 1990
 
   Movie.create do |m|
-    m.title = "Home Alone"
-    m.release_date = "1990"
-    m.director = "Spielburg"
+    if m.title == nil
+      m.title = "Home Alone"
+    end
+    if m.release_date == nil
+     m.release_date = "1990"
+   end
+    if m.director == nil
+      m.director = "Spielburg"
+    end
     m.lead = "McCully"
     m.in_theaters = false
   end
