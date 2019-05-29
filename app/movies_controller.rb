@@ -30,8 +30,8 @@ def can_be_created_in_a_block(args = {title: "Home Alone", release_date: 1990})
 
   movie = Movie.create do |m|
     binding.pry
-    m.release_date = args[:release_date],
-    m.title = args[:title],
+    m.release_date = args[:release_date]
+    m.title = args[:title]
     # m.director = args[:director],
     # m.lead = args[:lead],
     # m.in_theaters = args[:in_theaters]
