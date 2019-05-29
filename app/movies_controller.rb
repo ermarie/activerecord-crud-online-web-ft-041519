@@ -38,7 +38,8 @@ def can_be_created_in_a_block(args = __)
     if m.director == nil
       m.director = "Spielburg"
     end
-    m.lead = "McCully"
+    if m.lead == nil
+      m.lead = "McCully"
     m.in_theaters = false
   end
 end
