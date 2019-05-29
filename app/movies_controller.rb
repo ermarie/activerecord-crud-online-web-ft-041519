@@ -43,6 +43,7 @@ def can_be_created_in_a_block(args = __)
     end
     if m.in_theaters == nil
       m.in_theaters = false
+    end
   end
 end
 
