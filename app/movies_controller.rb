@@ -33,7 +33,7 @@ def can_be_created_in_a_block(args = __)
       m.title = "Home Alone"
     end
     if m.release_date == nil
-     m.release_date = "1990"
+     m.release_date = 1990
    end
     if m.director == nil
       m.director = "Spielburg"
