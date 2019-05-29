@@ -29,10 +29,10 @@ def can_be_created_in_a_block(args = {title:"Home Alone", release_date:1990, dir
   # release_date == 1990
 
   Movie.create do |m|
-    @title = title:
-    @release_date = release_date:
-    @director = director:
-    @lead = lead:
+    @title = title:,
+    @release_date = release_date:,
+    @director = director:,
+    @lead = lead:,
     @in_theaters = in_theaters:
   end
 end
